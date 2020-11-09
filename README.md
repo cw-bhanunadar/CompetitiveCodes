@@ -1,1 +1,1 @@
-Competivie codes
+Competitive codes
