@@ -14,12 +14,12 @@ public class Solution {
         long n=mod-2;
         while(n>0)
         {
-            if (n%2==1)
-                ans=(ans*x)%mod;
-            x=(x*x)%mod;
-            n/=2;
+            if (n & 1 == 1)
+                ans=(ans * x) % mod;
+            x = (x * x) % mod;
+            n >>= 1;
     }
-    return ans%mod;
+    return ans;
  }
     
     public static void fact()
@@ -55,7 +55,7 @@ public class Solution {
                     System.out.println(ans);
                 }
                 
-               t--;
+               t -= 1;
         }
         
         
